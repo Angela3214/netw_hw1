@@ -28,8 +28,8 @@ Switch(config-if)#exit
 Switch(config)#vtp mode transparent
 Switch(config)#exit
 Switch#wr```
-
-Для R3:
+____
+Для R4:
 ```Switch>enable
 Switch#conf t
 Switch(config)#vlan 10
@@ -53,7 +53,7 @@ Switch(config-if)#exit
 Switch(config)#vtp mode transparent
 Switch(config)#exit
 Switch#wr```
-
+____
 Для R5:
 ```Switch>enable
 Switch#conf t
@@ -82,7 +82,7 @@ Switch(config)#spanning-tree vlan 20 root primary
 Switch(config)#vtp mode transparent
 Switch(config)#exit
 Switch#wr```
-
+____
 Для R6 (роутер):
 ```Router>enable
 Router#conf t
@@ -100,9 +100,9 @@ Router(config-subif)#ip address 10.0.20.1 255.255.255.0
 Router(config-subif)#exit
 Router(config)#exit
 Router#wr```
-
+____
 Для VPC1:
 ```ip 10.0.10.2 255.255.255.0 10.0.10.1```
-
+____
 Для VPC2:
 ```ip 10.0.20.2 255.255.255.0 10.0.20.1```
