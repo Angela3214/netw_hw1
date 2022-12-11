@@ -27,7 +27,8 @@ Switch(config-if)#switchport mode trunk
 Switch(config-if)#exit
 Switch(config)#vtp mode transparent
 Switch(config)#exit
-Switch#wr```
+Switch#wr
+```
 ____
 Для R4:
 ```Switch>enable
@@ -52,7 +53,8 @@ Switch(config-if)#switchport trunk allowed vlan 10,20
 Switch(config-if)#exit
 Switch(config)#vtp mode transparent
 Switch(config)#exit
-Switch#wr```
+Switch#wr
+```
 ____
 Для R5:
 ```Switch>enable
@@ -81,7 +83,8 @@ Switch(config)#spanning-tree vlan 10 root primary
 Switch(config)#spanning-tree vlan 20 root primary
 Switch(config)#vtp mode transparent
 Switch(config)#exit
-Switch#wr```
+Switch#wr
+```
 ____
 Для R6 (роутер):
 ```Router>enable
@@ -99,10 +102,13 @@ Router(config-subif)#encapsulation dot1Q 20
 Router(config-subif)#ip address 10.0.20.1 255.255.255.0
 Router(config-subif)#exit
 Router(config)#exit
-Router#wr```
+Router#wr
+```
 ____
 Для VPC1:
-```ip 10.0.10.2 255.255.255.0 10.0.10.1```
+```ip 10.0.10.2 255.255.255.0 10.0.10.1
+```
 ____
 Для VPC2:
-```ip 10.0.20.2 255.255.255.0 10.0.20.1```
+```ip 10.0.20.2 255.255.255.0 10.0.20.1
+```
